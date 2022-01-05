@@ -70,14 +70,12 @@ function tienenMismaLongitud(str1, str2) { return str1===str2; true;
   
 }
 
-function menosQueNoventa(num) { return if (num < 90) {true} else {false};
-  // Devuelve "true" si el argumento de la función "num" es menor que noventa
-  // De lo contrario, devuelve "false"
-  // Tu código:
+function menosQueNoventa(num) { return if (num < 90) {true} else (num > 90) {false};
+  
   
 }
 
-function mayorQueCincuenta(num) {return if (num > 50) {true} else false ;
+function mayorQueCincuenta(num) {return if (true) {num > 50} else (false) {num < 50};
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
