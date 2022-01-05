@@ -25,7 +25,7 @@ const nuevoModulo = 21 % 5 === 4;
 // Pista: "console.log()" NO fucionará.
 // No cambies los nombres de las funciones.
 
-function devolverString(str) { string import devolverString ;
+function devolverString(str) { return 'hola' ;
   // "Return" la string provista: str
   // Tu código: 
   
@@ -70,14 +70,14 @@ function tienenMismaLongitud(str1, str2) { return str1===str2; true;
   
 }
 
-function menosQueNoventa(num) { return if (num<90){true} else {false}
+function menosQueNoventa(num) { return if (num < 90) {true} else {false};
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
   
 }
 
-function mayorQueCincuenta(num) {return if (num>50){true} else {false}
+function mayorQueCincuenta(num) {return if (num > 50) {true} else false ;
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -90,14 +90,14 @@ function obtenerResto(x, y) { return resta x / y;
   
 }
 
-function esPar(num) { return if(true){num = esPar} else {false}
+function esPar(num) { return if (num===esPar) {true} else {false};
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
   
 }
 
-function esImpar(num) {
+function esImpar(num) {return if (num===esImpar) {true} else {false};
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
