@@ -169,7 +169,7 @@ function obtenerSaludo(nombre) {
 
 function obtenerAreaRectangulo(alto, ancho) {obtenerAreaRectangulo
   // Retornar el area de un rectángulo teniendo su altura y ancho
-  // Tu código: ni idea, no la entendi.
+  // Tu código: NI IDEA NO LA HABIA ENTENDIDO.
 return alto * ancho  
 }
 
@@ -184,7 +184,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-
+return base * altura
 }
 
 
@@ -192,7 +192,8 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  
+  const cantidad = 1;
+  euro = cantidad * 1,20; {return cantidad * euro}
 }
 
 
