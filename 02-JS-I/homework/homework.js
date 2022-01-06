@@ -102,26 +102,26 @@ function esImpar(num) {if (num===esImpar) {return true;} else {return false;}
   
 }
 
-function elevarAlCuadrado(num) {
+function elevarAlCuadrado(num) { return num** num
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
   
 }
 
-function elevarAlCubo(num) {
+function elevarAlCubo(num) { return num *** num
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
   
 }
 
-function elevar(num, exponent) {
+function elevar(num, exponent) { (Exponent = 2); return Num ** exponent;
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
   
 }
 
-function redondearNumero(num) {
+function redondearNumero(num) { return {redondearNumero num;}
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
   
@@ -130,13 +130,13 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+  redondearNumero (numero<  )
 }
 
-function numeroRandom() {
+function numeroRandom() { 
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  
+ return Math.random ( 0,1);
 }
 
 function esPositivo(numero) {
@@ -144,7 +144,7 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  
+  if (numero === esPositivo) {return "es positivo";} else {return "Es negativo";}
 }
 
 function agregarSimboloExclamacion(str) {
@@ -157,14 +157,14 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  
+  return nombre + apellido
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  
+  ( Var nombre = "martin"), obtenerSaludo = "Hola" + nombre;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
