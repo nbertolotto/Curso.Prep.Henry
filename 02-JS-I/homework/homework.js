@@ -63,14 +63,14 @@ function sonIguales(x, y) { return x===y; true;
   
 }
 
-function tienenMismaLongitud(str1, str2) { return str1===str2; true;
+function tienenMismaLongitud(str1, str2)  {if (str1.lenght === str2.lenght){return true;} else {return false;}
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
   
 }
 
-function menosQueNoventa(num) { return if (num < 90) {true} else (num > 90) {false};
+function menosQueNoventa(num) { return if (num < 90) { return true} else (num > 90) {return false};
   
   
 }
