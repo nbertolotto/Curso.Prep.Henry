@@ -10,7 +10,7 @@ const nuevoNum = 1;
 const nuevoBool = true ;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - 4 === 5;
+const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
 const nuevaMultiplicacion = 10 * 4 === 40 ;
@@ -25,38 +25,38 @@ const nuevoModulo = 21 % 5 === 4;
 // Pista: "console.log()" NO fucionará.
 // No cambies los nombres de las funciones.
 
-function devolverString(str) { return 'hola' ;
+function devolverString(str) { return str ;
   // "Return" la string provista: str
   // Tu código: 
   
 }
 
-function suma(x, y) { return x + y
+function suma(x, y) { return x + y;
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código: 
   
 }
 
-function resta(x, y) {  return x - y
+function resta(x, y) {  return x - y;
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
   
 }
 
-function multiplica(x, y) { return x * y
+function multiplica(x, y) { return x * y;
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
   
 }
 
-function divide(x, y) { return x / y
+function divide(x, y) { return x / y;
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
   
 }
 
-function sonIguales(x, y) { return x===y; true;
+function sonIguales(x, y) { if (x===y) {return true;} else  {return false;}
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -82,7 +82,7 @@ function mayorQueCincuenta(num) { if (num > 50) {return true;} else {return fals
   
 }
 
-function obtenerResto(x, y) { return resta x / y;
+function obtenerResto(x, y) { return x % y;
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
   
@@ -102,16 +102,16 @@ function esImpar(num) {if (num===esImpar) {return true;} else {return false;}
   
 }
 
-function elevarAlCuadrado(num) { return num** num
+function elevarAlCuadrado(num) { return Math.pow (num,2);
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
-  // Tu código:
+  // Tu código: ESTA LA HABIA PUESTO RETURN NUM **
   
 }
 
-function elevarAlCubo(num) { return num *** num
+function elevarAlCubo(num) { return num * num * num
   // Devuelve el valor de "num" elevado al cubo
-  // Tu código:
+  // Tu código: ESTA LA HABIA PUESTO RETURNO NUM***
   
 }
 
@@ -121,16 +121,16 @@ function elevar(num, exponent) { (Exponent = 2); return Num ** exponent;
   
 }
 
-function redondearNumero(num) { return {redondearNumero num;}
+function redondearNumero(num) { return math.pow.round (num);
   // Redondea "num" al entero más próximo y devuélvelo
-  // Tu código:
+  // Tu código: NO TENIA NI IDEA DE ESTA
   
 }
 
-function redondearHaciaArriba(num) {
+function redondearHaciaArriba(num) { return math.pow.ceil 
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
-  // Tu código:
-  redondearNumero (numero<  )
+  // Tu código: NO TENIA NI IDEA DE ESTA.
+  
 }
 
 function numeroRandom() { 
@@ -144,10 +144,10 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero === esPositivo) {return "es positivo";} else {return "Es negativo";}
+  if (numero > 0) {return "es positivo";} else {return "Es negativo";}
 }
 
-function agregarSimboloExclamacion(str) {
+function agregarSimboloExclamacion(str) { return str + "!!!"
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
@@ -157,20 +157,20 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return nombre + apellido
+  return nombre + apellido 
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  ( Var nombre = "martin"), obtenerSaludo = "Hola" + nombre;
+  ( Var nombre = "martin") { return "Hola" + nombre + "!"; }
 }
 
-function obtenerAreaRectangulo(alto, ancho) {
+function obtenerAreaRectangulo(alto, ancho) {obtenerAreaRectangulo
   // Retornar el area de un rectángulo teniendo su altura y ancho
-  // Tu código:
-  
+  // Tu código: ni idea, no la entendi.
+return alto * ancho  
 }
 
 
