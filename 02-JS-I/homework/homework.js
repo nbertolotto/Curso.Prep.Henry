@@ -70,12 +70,12 @@ function tienenMismaLongitud(str1, str2)  {if (str1.lenght === str2.lenght){retu
   
 }
 
-function menosQueNoventa(num) { return if (num < 90) { return true} else (num > 90) {return false};
+function menosQueNoventa(num) { if (num < 90) { return true;} else {return false;}
   
   
 }
 
-function mayorQueCincuenta(num) {return if (true) {num > 50} else (false) {num < 50};
+function mayorQueCincuenta(num) { if (num > 50) {return true;} else {return false;} 
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -88,14 +88,14 @@ function obtenerResto(x, y) { return resta x / y;
   
 }
 
-function esPar(num) { return if (num===esPar) {true} else {false};
+function esPar(num) { if (num===esPar) {return true;} else {return false;}
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
   
 }
 
-function esImpar(num) {return if (num===esImpar) {true} else {false};
+function esImpar(num) {if (num===esImpar) {return true;} else {return false;}
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
