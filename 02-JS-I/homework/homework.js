@@ -157,20 +157,20 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return nombre + apellido 
+  return nombre + apellido ;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
-  // Tu código:{ return "Hola" + nombre + "!" };
- console.log('Hola' + '' + nombre)
+  // Tu código:{ return "Hola" + nombre + "!" };console.log('Hola' + '' + nombre)
+  console.log('Hola' + '' + nombre)
 }
 
-function obtenerAreaRectangulo(alto, ancho) {obtenerAreaRectangulo
+function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código: NI IDEA NO LA HABIA ENTENDIDO.
-return alto * ancho  
+return alto * ancho; 
 }
 
 
@@ -183,8 +183,8 @@ function retornarPerimetro(lado){
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
-  //Escribe tu código aquí
-return base * altura
+  //Escribe tu código aquí o return{ base * altura};
+ console.log( base * altura);
 }
 
 
