@@ -7,7 +7,7 @@ const nuevaString = 'Holaaa';
 const nuevoNum = 1;
 
 // Crea una variable booleana:
-const nuevoBool = true ;
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
@@ -25,7 +25,7 @@ const nuevoModulo = 21 % 5 === 4;
 // Pista: "console.log()" NO fucionará.
 // No cambies los nombres de las funciones.
 
-function devolverString(str) { return str ;
+function devolverString(str) { return str;
   // "Return" la string provista: str
   // Tu código: 
   
@@ -88,14 +88,14 @@ function obtenerResto(x, y) { return x % y;
   
 }
 
-function esPar(num) { if (num===esPar) {return true;} else {return false;}
+function esPar(num) { if (num % 2 ===1) {return true;} else {return false;}
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
   
 }
 
-function esImpar(num) {if (num===esImpar) {return true;} else {return false;}
+function esImpar(num) {if (num % 3===1) {return true;} else {return false;}
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -109,16 +109,16 @@ function elevarAlCuadrado(num) { return Math.pow (num,2);
   
 }
 
-function elevarAlCubo(num) { return num * num * num
+function elevarAlCubo(num) { return num * num * num;
   // Devuelve el valor de "num" elevado al cubo
   // Tu código: ESTA LA HABIA PUESTO RETURNO NUM***
   
 }
 
-function elevar(num, exponent) { (Exponent = 2); return Num ** exponent;
+function elevar(num, exponent) { return math.pow (num, exponent);
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
-  // Tu código:
-  
+  // Tu código:(Exponent = 2); return Num ** exponent;
+
 }
 
 function redondearNumero(num) { return math.pow.round (num);
@@ -157,6 +157,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
+  var combinados= nombre + ''+ apellido;
   return nombre + apellido ;
 }
 
@@ -170,21 +171,21 @@ function obtenerSaludo(nombre) {
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código: NI IDEA NO LA HABIA ENTENDIDO.
-return alto * ancho; 
+return alto * ancho;  
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  
+  return lado * 4
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
-  //Escribe tu código aquí o return{ base * altura};
- console.log( base * altura);
+  //Escribe tu código aquí o return{ base * altura};console.log( base * altura);
+  return (base * altura)/2;
 }
 
 
