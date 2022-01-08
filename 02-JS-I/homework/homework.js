@@ -15,8 +15,8 @@ const nuevaResta = 10 - 5 === 5;
 // Resuelve el siguiente problema matemático:
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
-// Resuelve el siguiente problema matemático:
-const nuevoModulo = 20 % 5 === 4;
+// Resuelve el siguiente problema matemático: *****NO LA ENTIENDO *******
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -88,7 +88,7 @@ function obtenerResto(x, y) { return x % y;
   
 }
 
-function esPar(num) { if (num % 2 ===1) {return true;} else {return false;}
+function esPar(num) { if (num % 2 === 1) {return true;} else {return false;}
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -109,13 +109,16 @@ function elevarAlCuadrado(num) { return Math.pow (num,2);
   
 }
 
-function elevarAlCubo(num) { return num * num * num;
+function elevarAlCubo(num) {
+var elevarAlCubo = num * num * num; return elevarAlCubo
   // Devuelve el valor de "num" elevado al cubo
-  // Tu código: ESTA LA HABIA PUESTO RETURNO NUM***
+  // Tu código: ESTA LA HABIA PUESTO RETURNO NUM*** { return num * num * num;
   
 }
 
-function elevar(num, exponent) { return math.pow (num, exponent);
+function elevar(num, exponent) { 
+  var elevar = Math.pow (num,exponent)
+  return elevar;
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:(Exponent = 2); return Num ** exponent;
 
@@ -123,13 +126,13 @@ function elevar(num, exponent) { return math.pow (num, exponent);
 
 function redondearNumero(num) { return math.pow.round (num);
   // Redondea "num" al entero más próximo y devuélvelo
-  // Tu código: NO TENIA NI IDEA DE ESTA
+  // Tu código: 
   
 }
 
 function redondearHaciaArriba(num) { return math.pow.ceil 
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
-  // Tu código: NO TENIA NI IDEA DE ESTA.
+  // Tu código: 
   
 }
 
@@ -145,6 +148,7 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero > 0) {return "Es positivo";} else {return "Es negativo";}
+  if (numero === 0){return false}
 }
 
 function agregarSimboloExclamacion(str) { return str + "!"
@@ -204,7 +208,10 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí NO TENIA IDEA DEL || hubiera hecho cinco if.
-  if (letra.lenght > 1){return "Dato incorrecto"} if (letra=== 'a'|| letra === 'e'|| letra === 'i'|| letra === 'o'|| letra==='u') {return "Es vocal"} else {return "Dato incurrecto"}
+  if (letra.lenght > 1){
+    return "Dato incorrecto"} 
+    if (letra === 'a'|| letra === 'e'|| letra === 'i'|| letra === 'o'|| letra ==='u') {return "Es vocal"} 
+    else { return "Dato incorrecto"}
 
 
 }
