@@ -146,11 +146,12 @@ function numeroRandom() {
 
 function esPositivo(numero) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
-  //Si el número es positivo, devolver ---> "Es positivo"
+  //Si el número es positivo, devolver ---> ""
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero > 0) {return "Es positivo";} else {return "Es negativo";}
-  if (numero === 0){return false}
+  if (numero === 0) { return false;}
+  else (numero > 0) {return 'Es positivo';} else {return 'Es negativo';} 
+  ;
 }
 
 function agregarSimboloExclamacion(str) { return str + "!"
@@ -163,15 +164,15 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var combinados= nombre + ''+ apellido;
-  return nombre + apellido ;
+  var combinados= nombre +  apellido;
+  return nombre + ' ' + apellido ;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:{ return "Hola" + nombre + "!" };console.log('Hola' + '' + nombre)
-  console.log('Hola' + '' + nombre)
+  console.log('"Hola '+''+ nombre +'!"');
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
