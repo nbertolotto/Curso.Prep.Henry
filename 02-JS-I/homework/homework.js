@@ -132,10 +132,10 @@ function redondearNumero(num) {
   
 }
 
-function redondearHaciaArriba(num) { return math.ceil(num);
+function redondearHaciaArriba(num) { 
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
-  // Tu código: 
-  
+  // Tu código: return math.round.ceil(num);
+  return Math.ceil(num);
 }
 
 function numeroRandom() { 
