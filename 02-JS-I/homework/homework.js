@@ -199,9 +199,9 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí  var cantidad = 1;  euro = cantidad * 1.2; {return cantidad * euro}
-  return {euro * 1.2;}
+ return euro * 1.2;
 }
-
+ 
 
 function esVocal(letra){
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
