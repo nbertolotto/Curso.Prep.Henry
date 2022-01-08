@@ -124,13 +124,15 @@ function elevar(num, exponent) {
 
 }
 
-function redondearNumero(num) { return math.pow.round (num);
+function redondearNumero(num) { 
+  var redondearNumero = math.round(num);
+  return redondearNumero;
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código: 
   
 }
 
-function redondearHaciaArriba(num) { return math.pow.ceil 
+function redondearHaciaArriba(num) { return math.ceil(num);
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código: 
   
@@ -196,9 +198,8 @@ function areaDelTriangulo(base, altura){
 function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
-  //Escribe tu código aquí
-  var cantidad = 1;
-  euro = cantidad * 1,20; {return cantidad * euro}
+  //Escribe tu código aquí  var cantidad = 1;  euro = cantidad * 1.2; {return cantidad * euro}
+  return {euro * 1.2;}
 }
 
 
