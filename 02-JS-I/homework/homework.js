@@ -134,7 +134,7 @@ function redondearNumero(num) {
 
 function redondearHaciaArriba(num) { 
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
-  // Tu código: return math.round.ceil(num);
+  // Tu código: return math.ceil(num);
   return Math.ceil(num);
 }
 
@@ -172,8 +172,8 @@ function combinarNombres(nombre, apellido) {
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
-  // Tu código:{ return "Hola" + nombre + "!" };console.log('Hola' + '' + nombre)
-  console.log('"Hola '+''+ nombre +'!"');
+  // Tu código: console.log('"Hola '+''+ nombre +'!"');
+    return 'Hola ' + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
