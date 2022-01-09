@@ -133,7 +133,7 @@ function operadoresLogicos(num1, num2, num3) {
   if(num1>num2 && num1>num3 && num1 < 0 ) { 
     return "Número 1 es mayor y positivo"; } else if (num1 < 0 || num2 < 0 || num3 < 0) { 
       return "Hay negativos"; } else if (num3 > num1 || num3 > num2 ) { 
-        return (num3 + 1);} else if ( num1 == 0 || num2 == 0 || num3 == 0){ 
+        return (num3 + 1);} else if ( num1 === 0 || num2 === 0 || num3 === 0){ 
           return "Error";} else { return false;}
  
 }
@@ -143,14 +143,17 @@ function esPrimo(numero) {
   // De lo contrario devuelve "falso"
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
-  // Nota: Los números 0 y 1 NO son considerados números primos
+  // Nota: Los números 0 y 1 NO son considerados números primos if ( numero % numero || numero % 1) { return true;
+  if ( numero % numero && numero % 1)  {return true;} else { return false; }
 }
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-
+if ( valor === true || valor === false ) {
+  return 'Soy verdadero';
+} else {return 'es false'}
 }
 
 function tablaDelSeis(){
