@@ -4,13 +4,22 @@ function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
-  // Tu código:
+  // Tu código:var NumeroRandomA =  Math.random (x,y);  if (x > y) { return x } else if ( x < y) { return y} else { return Math.round (NumeroRandomA)}
+  
+  var NumeroRandomA =  (x, y);
+   if (x > y) { return x }
+    else if ( x < y) { return y}
+     else { return Math.round (NumeroRandomA)}
+  
 }
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
+  if ( edad >= 18 ) {
+    return 'Allowed';
+  } else { return 'Not allowed'};
 }
   
 function conection(status) {
