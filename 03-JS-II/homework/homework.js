@@ -64,7 +64,10 @@ function colors(color) {
   // ***************************************
   //SWITCH (COLOR) 
   //  CASE "BLUE"
-  //   RETURN "THIS IS BLUE" .. Y ASI
+  //   RETURN "THIS IS BLUE" 
+  // BREAK;( para terminar el switch)
+  // DEFAULT: 
+  // RETURN " COLOR NOT FOUND"
 
   if (color === "blue") {
     return "This is blue";
