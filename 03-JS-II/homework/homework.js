@@ -60,13 +60,13 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
-  if (color == "blue") {
+  if (color === "blue") {
     return "this is blue";
-  } else if (color == "red"){
+  } else if (color === "red"){
     return "This is red";
-  } else if (color == "green") {
+  } else if (color === "green") {
     return "This is green";
-  } else if ( color == "orange") {
+  } else if ( color === "orange") {
     return "This is orange";
   } else { 
     return "Color not found";
@@ -88,7 +88,7 @@ function estaEnRango(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (numero> 20 || numero < 50) {
-    return true;} else {
+    return true;} else if (numero < 20 || numero > 50) {
       return false;}
 }
 
@@ -151,30 +151,43 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-if ( valor === true || valor === false ) {
+if ( valor === true ) {
   return 'Soy verdadero';
-} else {return 'es false'}
+} else if ( valor === false) {return 'Soy falso';}
 }
 
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí 
-  var tablaDelSeis = 1
-  for (var i = 1 ; i <= 60;  i++* tablaDelSeis) { console.log(i)}
+  var tablaDelSeis = 6
+  for (var i = 1 ; i <= 60;  i++) { if( i*tablaDelSeis < 60) console.log(i * tablaDelSeis)}
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  if ( numero.length == "abc") {
+    return true; } else {
+      return false;
+    }
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
-  //Usar el bucle do ... while.
-}
+  //Usar el bucle do ... while. while ( numero < ((numero + 5) *8 )){ console.log((numero) + 5)}; return
+  var a = numero; 
+  var i = 0;
+   do {
+     i= i + 1;
+     a= a + 5;
+   } while (i<8); return a;
+
+   }
+
+   
+
 
 
 // No modificar nada debajo de esta línea
