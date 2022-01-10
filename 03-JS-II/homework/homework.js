@@ -112,11 +112,11 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if ( numero % 3 && numero % 5) {
+  if ( numero % 15=== 0) {
     return "fizzbuzz";
-  } else if (numero % 3) {
+  } else if (numero % 3 === 0) {
     return "fizz";
-  } else if (numero % 5) {
+  } else if (numero % 5 === 0) {
     return "buzz";
   } else {
     return numero;}
@@ -144,7 +144,8 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos if ( numero % numero || numero % 1) { return true;
-  if ( numero % numero && numero % 1)  {return true;} else { return false; }
+ // if ( numero % numero === 0
+  //{return true;} else { return false; }
 }
 
 function esVerdadero(valor){
@@ -159,9 +160,13 @@ if ( valor === true ) {
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí 
-  var tablaDelSeis = 6
-  for (var i = 1 ; i <= 60;  i++) { if( i*tablaDelSeis < 60) console.log(i * tablaDelSeis)}
+  //Escribe tu código aquí   var tablaDelSeis = 6 ;   for (var i = 1 ; i <= 60;  i++) { if( i*tablaDelSeis < 60) console.log(i * tablaDelSeis)}
+//function tablaDelSeis(){ var a = 0  do {  a = a + 1;  result = result.push(b*a) ;}while ( a < 11); return result}
+// NO ENTIENDO EL []
+let tabla = []
+for(let i=0 ; i < 11; i ++) {
+tabla.push (6 * i)
+}return tabla
 }
 
 function tieneTresDigitos(numero){
