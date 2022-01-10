@@ -87,8 +87,9 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero> 20 || numero < 50) {
-    return true;} else if (numero < 20 || numero > 50) {
+  if (numero > 20 && numero < 50) {
+    return true;}
+     else if (numero <= 20 || numero >= 50) {
       return false;}
 }
 
@@ -130,7 +131,7 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-  if(num1>num2 && num1>num3 && num1 < 0 ) { 
+  if(num1 > num2 && num1 > num3 && 0 < num1 ) { 
     return "Número 1 es mayor y positivo"; } else if (num1 < 0 || num2 < 0 || num3 < 0) { 
       return "Hay negativos"; } else if (num3 > num1 || num3 > num2 ) { 
         return (num3 + 1);} else if ( num1 === 0 || num2 === 0 || num3 === 0){ 
@@ -146,6 +147,8 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos if ( numero % numero || numero % 1) { return true;
  // if ( numero % numero === 0
   //{return true;} else { return false; }
+
+
 }
 
 function esVerdadero(valor){
