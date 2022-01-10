@@ -10,7 +10,7 @@ function obtenerMayor(x, y) {
    if (x > y) { return x }
     else if ( x < y) { return y}
      else { return Math.round (NumeroRandomA)}
-  
+  // tambien podria ser IF (X === Y) {RETURN X || Y}
 }
 
 function mayoriaDeEdad(edad) {
@@ -28,8 +28,9 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-  if ( status == 1){
-    return "Online";} else if (status == 2) {
+  if ( status === 1){
+    return "Online";
+  } else if (status === 2) {
       return "Away";
     } else {return "Offline";}
     
@@ -59,7 +60,12 @@ function colors(color) {
   //En caso que el color recibido sea "green", devuleve --> "This is green"
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
-  //Usar el statement Switch.
+  //Usar el statement Switch. ( NO LO HABIA LEIDO, )
+  // ***************************************
+  //SWITCH (COLOR) 
+  //  CASE "BLUE"
+  //   RETURN "THIS IS BLUE" .. Y ASI
+
   if (color === "blue") {
     return "This is blue";
   } else if (color === "red"){
