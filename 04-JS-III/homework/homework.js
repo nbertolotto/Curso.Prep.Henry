@@ -3,24 +3,24 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
-var array = []
-console.log( array [0]);
+//var array = []
+//for ( var i= 0; i < array.length ; array.push) {console.log ( array[0])}
+
+return array[0];
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  var array = []
-console.log( array [array.length]);
+return array [array.length - 1];
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-  var array = []
-console.log( array.length);
+return array.length;
 }
 
 
@@ -29,10 +29,9 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-var array=  []
-for ( var i= 0; i < array.length ; i++) {
-    console.log( array[i])
-  }
+var b = []
+  for ( var i= 0; i < array.length ; i++) {  b.push ( array[i]+1)} return b;
+
 }
 
 
@@ -40,12 +39,10 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  array = []
-  array.push (elemento); 
-  console.log(array);
-    
-  
-}
+  Nuevoarray = [  array.push (elemento)]
+  //for ( var i= 0; i < elemento.length ; i++) {array.push (elemento*[i]); }
+  console.log(Nuevoarray);
+      }
 
 
 function agregarItemAlComienzoDelArray(array, elemento) {
