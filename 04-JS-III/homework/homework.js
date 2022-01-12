@@ -29,6 +29,9 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  // POR  PROFE = FOR ( VAR I = 0; I< ARRAY,LENGTH; I ++) {ARRAY [I] = ARRAY [I]+1;} RETURN ARRAY  
+  // TAMBIEN CON UN MAP
+  // VAR ARRAY 1=  ARRAY.MAP((ELEMENTO) => ELEMENTO +1) RETURN ARRAY1;
 var b = []
   for ( var i= 0; i < array.length ; i++) {  b.push ( array[i]+1)} return b;
 
@@ -67,9 +70,9 @@ function dePalabrasAFrase(palabras) {
   // return palabras.join(' ');
   //var array = [palabras]
   
-  //console.log(array);} MMMMMMMMMMMMMMMMMMMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALLLLLLLLLLLLLLLLL
-  array= [];
-  for ( i = 0; i < palabras.length; i ++) return (palabras + ' ') [i];
+  //console.log(array);} 
+  frases = palabras.join( ' ') ;
+  return frases ;
 }
 
 
@@ -77,10 +80,8 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  array = []
-  for ( i = 0; i < array.length; i ++) console.log (array[i]);
-  for ( i = 0; i < elemento.length; i ++) console.log (elemento[i]);
-  if (array[i] === elemento); return true;
+  if (array.includes(elemento)) return true; else return false;
+ 
 }
 
 
@@ -96,6 +97,9 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+ //for (i=0; i < resultadosTest.length; i++)  {
+     return promedioResultadosTest(resultadosTest) / resultadosTest.length ;
+
 }
 
 
@@ -103,9 +107,11 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  var Numeraso = numeros [0];
+  for ( i= 0 ; i< numeros.length; i ++) if ( numeros[i]> numeraso){numeraso=numeros[i];}
+
+return numeraso;
 }
-
-
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
