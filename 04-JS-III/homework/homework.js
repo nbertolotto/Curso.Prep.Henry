@@ -70,7 +70,7 @@ function dePalabrasAFrase(palabras) {
   // return palabras.join(' ');
   //var array = [palabras]
   
-  //console.log(array);} 
+  //return palabras.join ( ' ' );
   frases = palabras.join( ' ') ;
   return frases ;
 }
@@ -80,6 +80,12 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  // OTRA FORMA : ARRAY.INCLUDES(ELEMENTO)
+  // TAMBIEN SE PUEDE USAR UN FOR, SI ALGUNO DE LOS ELEMENTOS ES IGUAL RETORNA TRUE SINO FALSE
+
+  // for ( i = 0 ; i < array.lenght; i ++)  
+  //if (array[i] === elemento ) return true;} else return false;}
+
   if (array.includes(elemento)) return true; else return false;
  
 }
@@ -88,8 +94,12 @@ function arrayContiene(array, elemento) {
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
-  // Tu código:
-  if ( numero  % 1)  for ( i = 0; i < numeros.length; i ++) console.log (numeros[i]);
+  // Tu código: SE PUEDE USAR DE DOS FORMAS
+  // sino usar metodo REDUCE === es :   return numeros.reduce();
+  var suma = 0;
+  for ( i = 0; i < numeros.length; i ++) {suma = suma + numeros[i];
+  }
+ return suma; 
 }
 
 
@@ -97,8 +107,13 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
- //for (i=0; i < resultadosTest.length; i++)  {
-     return promedioResultadosTest(resultadosTest) / resultadosTest.length ;
+ var suma = 0; // agregado por prof ( me habia faltado aagrerar una variable de acumilacion)
+ var promedio = 0; // agregado por prof
+   for (var i = 0; i < resultadosTest.length; i++)  { suma = suma + resultadosTest[i]}
+     //resultadosTest[i] = resultadosTest[i] / resultadosTest[i].length;}
+     promedio = suma / resultadosTest.length;
+ return promedio;
+
 
 }
 
@@ -107,22 +122,45 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-  var Numeraso = numeros [0];
-  for ( i= 0 ; i< numeros.length; i ++) if ( numeros[i]> numeraso){numeraso=numeros[i];}
-
-return numeraso;
+  var numeraso = 0;
+  for ( i= 0 ; i < numeros.length; i++) {
+  if (numeros[i] > numeraso){
+    numeraso = numeros[i];
+  } 
+} 
+  return numeraso;
 }
+// otra forma seria return Math.max (...numeros);
+
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-}
+  if (arguments.length === 0) return 0;
+  if (arguments.length === 1) return arguments[0]; // cero porque solo tiene un elemento, retorna el unico, es decir 0
 
+  let resultado = 1
+for ( let i = 0; i < arguments.length; i++) { 
+ // resultado = resultado * arguments[i];
+  // como se repite el resultado = resultado , se puede poner asi 
+   resultado *= arguments[i];
+} return resultado;
+}
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
+  // tres forma de nombrar variables: var, let, const( permite no reasignar nuevo valor)
+  var resultado = 0;
 
+  for ( var i = 0; arreglo.length; i++){ 
+    
+if ( arreglo[i] > 18) { 
+resultado += 1; 
+//resultado++;
+  }
+}
+return resultado; 
 }
 
 
