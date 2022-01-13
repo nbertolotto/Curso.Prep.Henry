@@ -179,10 +179,19 @@ function diaDeLaSemana(numeroDeDia) {
 
 
 function empiezaConNueve(n) {
-  //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
+  //Desarrolle una función que recibe como parámetro un número en   tero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   
+  var nString = n.toString();
+
+  if ( nString.charAt(0) === "9" ){
+    return true ;} else {
+      return false;}
+  // o con doble == ponia 9) 
+  // o con  if ( nString[0])....
+}
+
   //var acu = 0
   //for ( var i = 0; i < n.length; i++){ 
   //if (n[i][0] == 9) return true ; else { acu += n[i];}
@@ -194,9 +203,6 @@ function empiezaConNueve(n) {
     // el https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/charAt
     //https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/toString
 
-    var nString = n.toString();
-    if ( nString.charAt(0) === "9") {return true ;} else {return false}
-}
 
 //var a = [(n[0])]
 //if (a[0]  === 9) return true;
@@ -207,21 +213,41 @@ function todosIguales(arreglo) {
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
   
+  var TI = 0
+  for ( var i = 0; i < arreglo.length; i++) 
+  var TI = TI + arreglo[i]
+  if ( arreglo[0]== TI/ arreglo.length ) return true ; else return false;
 } 
 
+// EN LA CLASE HICIERON 
+// VAR COMPARACION= ARREGLO [O]
+// for ( var i = 1; i < arreglo.length; i++) {
+ //  IF ( ARREGLO[I]=/=COMPARACION) RETURN FALSE, 
+//} RETURN TRUE;
 
 function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-}
+  
+  Meses = []
+  for ( var i = 0; i < array.length; i++) {
+   if ( array[i] === "Enero"||array[i] === "Marzo" ||array[i] === "Noviembre" ) 
+   Meses.push(array[i]) 
+  }
+  if( Meses.length == 3) return Meses; else return "No se encontraron los meses pedidos";
+} 
 
 
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  nuevo = []
+  for ( var i = 0; i < array.length; i++) {
+    if ( array[i] > 100) nuevo.push(array[i]);
+}return nuevo;
 }
 
 
@@ -233,6 +259,11 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  nuevo = []
+  for ( var i = 0; i < numero.length; i++) {
+    if ( nuevo == numero[i]) break ; console.log("Se interrumpió la ejecución");
+    if ( numero.length[i] < 10 ) nuevo.push((numero[i]+2);
+} return nuevo 
 }
 
 
