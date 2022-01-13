@@ -152,8 +152,7 @@ function cuentoElementos(arreglo){
   //Escribe tu código aquí
   // tres forma de nombrar variables: var, let, const( permite no reasignar nuevo valor)
   var resultado = 0;
-
-  for ( var i = 0; arreglo.length; i++){ 
+  for ( var i = 0; i < arreglo.length; i++){ 
     
 if ( arreglo[i] > 18) { 
 resultado += 1; 
@@ -169,6 +168,12 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
+
+  var Sem = numeroDeDia
+        if ( Sem === 2 || Sem === 3 || Sem  === 4 || Sem  === 5 || Sem  === 6 ) { 
+    return "Es dia Laboral";}
+    else if ( Sem === 1|| Sem  === 7) { 
+      return "Es fin de semana";}
   
 } 
 
@@ -178,8 +183,24 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   
+  //var acu = 0
+  //for ( var i = 0; i < n.length; i++){ 
+  //if (n[i][0] == 9) return true ; else { acu += n[i];}
+  
+  //return false;
+    //} 
+    // para obtener el primer elemento de un string se puede usar toString para trasnformar el valor en un numero
+    //, donde se pasa la funcion charAt ubica a el lugar del  valor, y el tostring lo convienrte en string.
+    // el https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String/charAt
+    //https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/toString
+
+    var nString = n.toString();
+    if ( nString.charAt(0) === "9") {return true ;} else {return false}
 }
 
+//var a = [(n[0])]
+//if (a[0]  === 9) return true;
+//}
 
 function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
