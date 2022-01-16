@@ -86,10 +86,9 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero == 10) {
-    return true;} else if (numero == 5) {
-      return true;} else {
-        return false;}
+  if ( numero == 5 || numero == 10) return true; 
+  else return false;
+
 }
 
 function estaEnRango(numero) {
@@ -205,7 +204,7 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while. while ( numero < ((numero + 5) *8 )){ console.log((numero) + 5)}; return
   var a = numero; 
-  var i = 0;
+  var i = 0;  
    do {
      i= i + 1;
      a= a + 5;
