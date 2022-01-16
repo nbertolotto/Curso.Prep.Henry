@@ -32,10 +32,13 @@ function incrementarPorUno(array) {
   // POR  PROFE = FOR ( VAR I = 0; I< ARRAY,LENGTH; I ++) {ARRAY [I] = ARRAY [I]+1;} RETURN ARRAY  
   // TAMBIEN CON UN MAP
   // VAR ARRAY 1=  ARRAY.MAP((ELEMENTO) => ELEMENTO +1) RETURN ARRAY1;
-var b = []
-  for ( var i= 0; i < array.length ; i++) {  b.push ( array[i]+1)} return b;
+  var suma = []
+  for ( var i = 0; i< array.length; i++)
+  suma.push (array[i] + 1);
+  return suma;
 
-}
+
+} 
 
 
 function agregarItemAlFinalDelArray(array, elemento) {
@@ -73,6 +76,8 @@ function dePalabrasAFrase(palabras) {
   //return palabras.join ( ' ' );
   frases = palabras.join( ' ') ;
   return frases ;
+
+
 }
 
 
@@ -97,7 +102,8 @@ function agregarNumeros(numeros) {
   // Tu código: SE PUEDE USAR DE DOS FORMAS
   // sino usar metodo REDUCE === es :   return numeros.reduce();
   var suma = 0;
-  for ( i = 0; i < numeros.length; i ++) {suma = suma + numeros[i];
+  for ( i = 0; i < numeros.length; i ++) {
+    suma = suma + numeros[i];
   }
  return suma; 
 }
@@ -109,7 +115,8 @@ function promedioResultadosTest(resultadosTest) {
   // Tu código:
  var suma = 0; // agregado por prof ( me habia faltado aagrerar una variable de acumilacion)
  var promedio = 0; // agregado por prof
-   for (var i = 0; i < resultadosTest.length; i++)  { suma = suma + resultadosTest[i]}
+   for (var i = 0; i < resultadosTest.length; i++)  {
+      suma = suma + resultadosTest[i]}
      //resultadosTest[i] = resultadosTest[i] / resultadosTest[i].length;}
      promedio = suma / resultadosTest.length;
  return promedio;
@@ -130,7 +137,10 @@ function numeroMasGrande(numeros) {
 } 
   return numeraso;
 }
-// otra forma seria return Math.max (...numeros);
+// otra forma seria return Math.max (...numeros);  
+//Math.max(numeros);
+  //return numeros;
+
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
