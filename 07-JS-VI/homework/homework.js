@@ -31,32 +31,34 @@ function sumarArray(numeros, cb) {
   // No es necesario devolver nada
   //Tu código:
   var suma= 0
+  
   for (i=0; i< numeros.length;i++)
+  
   suma= suma+ numeros[i];
+  
   return cb(suma);
 
 }
+// OTRA FORMA SERIA USANDO EL .REDUCE:
+//var sumaTotal = numeros.reduce(function(acc, curr) {
+  //return acc + curr;
+//},0);
+//cb(sumaTotal);
+//}
 
 function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
-  var suma= 0
-  for (var i=0; i< array.length;i++)
-cb(array[i]);
- // if (i[i]== 0) cb(array[0]);
-  //if (i[i]== 1) cb(array[1]);
-  //if (i[i]== 2) cb(array[2]);
-  //if (i[i]== 3) cb(array[3]);
-  //if (i[i]== 4) cb(array[4]);
-  //if (i[i]== 5) cb(array[5]);
-  //if (i[i]== 6) cb(array[6]);
-  //if (i[i]== 7) cb(array[7]);
-  //if (i[i]== 8) cb(array[8]);
-  //if (i[i]== 9) cb(array[9]);
-  //if (i[i]== 10) cb(array[10]);
-  //if (i[i]== 11) cb(array[11]);
-}
+
+  //var suma= 0
+  //for (var i=0; i< array.length;i++)
+//cb(array[i]);
+
+ array.forEach(function (elemento,indice){
+cb(elemento);
+})  
+} // FORMO UTILIZANDO EL .FOREACH, ES IGUALMENTE VALIDA QUE LA FOR.
 
 function map(array, cb) {
   // Crea un nuevo array
@@ -75,9 +77,16 @@ function map(array, cb) {
 
    if ( i == array.length) return array2 ;
    
-
  
 }
+
+//var nuevoArray = array.map(function(el) {
+  //return cb(el);
+//});
+//return nuevoArray;
+//} ESTA FORMA ES UTILIZANDO EL .MAP
+
+
 
 function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
