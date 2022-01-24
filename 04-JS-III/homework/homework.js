@@ -64,6 +64,9 @@ function agregarItemAlFinalDelArray(array, elemento) {
  // NuevoArray = [];
   //for ( var i= 0; i < elemento.length ; i++) {array.push (elemento); }
   //console.log(NuevoArray);
+
+// 24/01 array.push(elemento); return array;
+  
   array.push(elemento);
   return array;
       }
@@ -74,6 +77,9 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+
+//24/01 array.unshift(elemento); return array;
+
   array.unshift(elemento); 
   return array;
     
@@ -107,6 +113,8 @@ function arrayContiene(array, elemento) {
   // for ( i = 0 ; i < array.lenght; i ++)  
   //if (array[i] === elemento ) return true;} else return false;}
 
+  //24/01 : if ( array.INCLUIDES(elemento)) return true; else return false;
+
   if (array.includes(elemento)) return true; else return false;
  
 }
@@ -117,6 +125,12 @@ function agregarNumeros(numeros) {
   // Suma todos los enteros y devuelve el valor
   // Tu código: SE PUEDE USAR DE DOS FORMAS
   // sino usar metodo REDUCE === es :   return numeros.reduce();
+
+  //24/01 for ( var i = 0; var i < numeros.length; i++)
+  // var suma= suma + numero[i];
+  //return suma;
+
+
   var suma = 0;
   for ( i = 0; i < numeros.length; i ++) {
     suma = suma + numeros[i];
@@ -129,12 +143,19 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+
+//24/01= var Suma = 0
+//var promeido = 0
+//for ( var i = 0; var i < resultadosTest.lenght; i++)
+// suma= suma + resultadosTest[i]
+// promedio= suma/[i]; 
+
  var suma = 0; // agregado por prof ( me habia faltado aagrerar una variable de acumilacion)
  var promedio = 0; // agregado por prof
    for (var i = 0; i < resultadosTest.length; i++)  {
       suma = suma + resultadosTest[i]}
      //resultadosTest[i] = resultadosTest[i] / resultadosTest[i].length;}
-     promedio = suma / resultadosTest.length;
+     promedio = suma / resultadosTest.length; // ACA LA HICE MEJOR EL 24/01
  return promedio;
 
 
@@ -145,6 +166,8 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  // 
+
   var numeraso = 0;
   for ( i= 0 ; i < numeros.length; i++) {
   if (numeros[i] > numeraso){
@@ -154,7 +177,7 @@ function numeroMasGrande(numeros) {
   return numeraso;
 }
 // otra forma seria return Math.max (...numeros);  
-//Math.max(numeros);
+//Math  .max(numeros);
   //return numeros;
 
 
