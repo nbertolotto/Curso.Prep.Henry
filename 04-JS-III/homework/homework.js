@@ -185,6 +185,9 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+
+//
+
   if (arguments.length === 0) return 0;
   if (arguments.length === 1) return arguments[0]; // cero porque solo tiene un elemento, retorna el unico, es decir 0
 

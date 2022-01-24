@@ -228,7 +228,9 @@ function doWhile(numero) {
 
    }
 
-   
+   // tambien podria ser con bucle for (var i = 0, i< 9, i++)
+   // suma = suma + 5
+   // 
 
 
 
