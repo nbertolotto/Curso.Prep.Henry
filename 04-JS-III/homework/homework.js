@@ -6,6 +6,8 @@ function devolverPrimerElemento(array) {
 //var array = []
 //for ( var i= 0; i < array.length ; array.push) {console.log ( array[0])}
 
+// return array [0];
+
 return array[0];
 }
 
@@ -13,6 +15,8 @@ return array[0];
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+// array [array.lenght-1];
+
 return array [array.length - 1];
 }
 
@@ -20,6 +24,9 @@ return array [array.length - 1];
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  // return array.length;
+
+
 return array.length;
 }
 
@@ -32,8 +39,17 @@ function incrementarPorUno(array) {
   // POR  PROFE = FOR ( VAR I = 0; I< ARRAY,LENGTH; I ++) {ARRAY [I] = ARRAY [I]+1;} RETURN ARRAY  
   // TAMBIEN CON UN MAP
   // VAR ARRAY 1=  ARRAY.MAP((ELEMENTO) => ELEMENTO +1) RETURN ARRAY1;
+
+  //24/01: 
+ //var array2=[]
+ //for( var i=0; i<array.length; i++)
+ //var suma = suma + 1 +  array[i]
+ //array2.push(suma[i]);
+ //return array2;
+
+
   var suma = []
-  for ( var i = 0; i< array.length; i++)
+ for ( var i = 0; i< array.length; i++)
   suma.push (array[i] + 1);
   return suma;
 
