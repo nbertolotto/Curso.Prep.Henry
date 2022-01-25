@@ -1,38 +1,80 @@
 /*
-Lección 3: Tarea de posicionamiento con CSS. Todo el trabajo debe hacerse en este archivo, por lo que si estás tocando cualquier otro
+Lección 3: Tarea de posicionamiento con CSS. Todo el trabajo debe hacerse 
+en este archivo, por lo que si estás tocando cualquier otro
 archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 */
 
 /* Ejercicio 1: Centrar el texto en un span */
 
 /* Arrancaremos este ejercicio por vos: */
+
+
 #ejercicioUno {
+    
+    display: block;
+    text-align: center;
+}
+
+#ejercicioDos{
+
+    display: none;
 
 }
 
 
-/* Ejercicio 2: Posicionar el header */
+#ejercicioTres{
 
-/* Acá va tu código */
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+ 
+ 
+#ejercicioCuatro{
+    position: fixed;
+    top:0px;
+    left: 0px;
+}
+/* EXCELENTE HERRAMIENTA PARA POSICIONAR UN CUADRO EN EL MARGEN SUPERIOR, ONDA HEAD DE LA PAGINA, UN LOGO QUE VA DE RIGTH A LEFT.*/
 
+#ejercicioCinco{
+    display: flex;
+    align-items: center; /* centra los tres elementos */ 
+    justify-content: space-around; /* justificar su contenido lo distingue y deja la misma cantidad dee espacio con los elementos que estamos trabajando*/
+      
 
-
-/* Ejercicio 3: */
-
-/* Acá va tu código */
-
-
-
-/* Ejercicio 4: */
-
-/* Acá va tu código */
-
-
-
-/* Ejercicio 5: */
-
-/* Acá va tu código */
-
-
+}
 
 /* Ejercicio 6. */
+
+
+#ejercicioCinco{
+
+flex-direction: row-reverse; /* row es columna, cambiamos la columna de lugar */
+
+}
+
+
+#ejercicioSiete {
+    position: relative;
+    align-items:center;
+}
+#elementoUno {
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+#elementoDos{
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+#elementoTres{
+    position: absolute;
+    top:100px;
+    right: 175px;
+
+}
+
+
+
