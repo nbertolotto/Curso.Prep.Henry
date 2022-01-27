@@ -12,7 +12,7 @@ function crearUsuario() {
 
 
   //26/01:
-//function Usuario (opciones) { // recurdar que el Mayus da la nota a una clase o prototypo.
+//function Usuario (opciones) { // recOrdar que el Mayus da la nota a una clase o prototypo.
   //this.usuario = opciones.usuario;
   //this.nombre=opciones.nombre;
   //this.email=opciones.email;
@@ -79,7 +79,7 @@ function agregarStringInvertida() {
 //26/01: 
 // String.prototye.reverse= function(){
 //for ( var i = this.length - 1; i==0 ;i--)  /// casi, me falto el -1 y el this.
-// reverso= reverso + this.charAt(i);   // habia hecho reverso[], reverso.push(this[i])
+// reverso= reverso + this.charAt(i);   //*******/ habia hecho reverso[], reverso.push(this[i])
 //}; return reverso;
 
   String.prototype.reverse = function(){
@@ -95,7 +95,8 @@ function agregarStringInvertida() {
 // ---------------------------------------------------------------------------//
   //Crea el constructor de la clase "Persona"
   //Debe tener las propiedades: "nombre", "apellido", "edad" y "domicilio"
-  //Debe tener un método llamado "detalle" que nos devuelve un objeto con las propiedades de la persona y sus valores.
+  //Debe tener un método llamado "detalle" que nos devuelve un objeto con las
+  // propiedades de la persona y sus valores.
   //Ej: { 
     //   Nombre: 'Juan',
     //   Apellido: 'Perez',
@@ -103,39 +104,41 @@ function agregarStringInvertida() {
     //   Domicilio: 'Saavedra 123'
     //  }
 
+// 26/01:
+  
+class Persona {
+  constructor (nombre, apellido, edad, domicilio){
+    this.nombre=nombre;
+    this.apellido = apellido;
+    this.edad = edad;
+    this.domicilio= domicilio;
+    this.detalle= function(){
+      console.log(
+        'Nombre: ' + this.nombre,
+        'Apellido: '+ this.apellido,
+        'Edad: ' + this.edad,
+        'Domicilio: '+this.domicilio 
+      );
+    }
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  class Persona {
-    constructor(nombre, apellido, edad, domicilio) {
-     this.nombre= nombre;
-     this.apellido= apellido;
-     this.edad= edad;
-     this.domicilio= domicilio;
-     this.detalle = function(){ // no habia puesto esto, sino que habia puesto detalle(){ 'nombre' + this.nombre} y return Persona
-     console.log(
-         'Nombre:'+ this.nombre ,
-          'Apellido:' + this.apellido,
-          'Edad:' + this.edad,
-          'Domicilio:'+ this.domicilio ) };
+  //class Persona {
+    //constructor(nombre, apellido, edad, domicilio) {
+     //this.nombre= nombre;
+     //this.apellido= apellido;
+     //this.edad= edad;
+     //this.domicilio= domicilio;
+     //this.detalle = function(){ // no habia puesto esto, sino que habia puesto detalle(){ 'nombre' + this.nombre} y return Persona
+     //console.log(
+       //  'Nombre:'+ this.nombre ,
+        //  'Apellido:' + this.apellido,
+         // 'Edad:' + this.edad,
+         // 'Domicilio:'+ this.domicilio ) };
           
-} 
-    } 
-
+//} 
+  //  } 
+// 26/01 MAL, CONFUNDI EL "" CONSTRICTOR.PROTOTYPE.PERSONA= ... ""
 
 function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
@@ -143,16 +146,9 @@ function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Devolver la nueva persona creada
   // LA HICE CASI BIEN, ERROR PUESTO INGRESE LOS DATOS DIRECTAMENTE... JUAN, PEREZ, 22, SAAVEDRA
 
-
-
-
-
-
-
-
-
-
-
+//26/01: var nuevapersona= new Persona (nombre,apellido,edad,dir);
+// return nuevapersona;
+// BIEN!!!
 
   var juan = new Persona(nombre,apellido,edad,dir);
 return juan;
@@ -164,17 +160,10 @@ function agregarMetodo() {
   //Ej: "Juan, 22 años"
   //LA HICE BIENN
 
-
-
-
-
-
-
-
-
-
-
-
+//26/01 : BIENNNNN!!!!
+//Persona.prototype.datos= function(){
+//  return this.nombre + ', ' + this.edad + ' años'; 
+//}
 
 
   Persona.prototype.datos= function(){
