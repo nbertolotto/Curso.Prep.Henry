@@ -7,6 +7,40 @@ function mayuscula(nombre) {
 
   // NO TENIA NI IDEA- toUpperCase() 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   return nombre[0].toUpperCase() + nombre.slice(1);
 
 }
@@ -14,13 +48,49 @@ function mayuscula(nombre) {
 function invocarCallback(cb) {
   // Invoca al callback `cb`
   //Tu código:
-return cb();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  return cb();
 }
 
 function operacionMatematica(n1, n2, cb) {
   //Vamos a recibir una función que realiza una operación matemática como callback junto con dos números.
   //Devolver el callback pasándole como argumentos los números recibidos.
   //Tu código:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   return cb(n1,n2);
 
 }
@@ -30,6 +100,17 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   var suma= 0
   
   for (i=0; i< numeros.length;i++)
@@ -55,6 +136,22 @@ function forEach(array, cb) {
   //for (var i=0; i< array.length;i++)
 //cb(array[i]);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  array.forEach(function (elemento,indice){
 cb(elemento);
 })  
@@ -65,6 +162,28 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   var array2= []
   var suma = 0
 
@@ -92,6 +211,22 @@ function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   var argu= []
   var mento = []
   
