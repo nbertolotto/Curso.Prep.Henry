@@ -7,39 +7,9 @@ function mayuscula(nombre) {
 
   // NO TENIA NI IDEA- toUpperCase() 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// 26:01... ES RARO PORQUE EN LA PAGINA ESTA PUESTO DE LA SIGUIENTE FIRMA **
+//return nombre[0].toUpperCase() + nombre.slice(1);
+//** RETURN nombre.charAt(0).toUpperCase()+nombre.slice(1); */
 
   return nombre[0].toUpperCase() + nombre.slice(1);
 
@@ -48,49 +18,17 @@ function mayuscula(nombre) {
 function invocarCallback(cb) {
   // Invoca al callback `cb`
   //Tu código:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//26/01: """return cb();"" BIEN
 
   return cb();
 }
 
 function operacionMatematica(n1, n2, cb) {
-  //Vamos a recibir una función que realiza una operación matemática como callback junto con dos números.
+  //Vamos a recibir una función que realiza una operación matemática como callback 
+  //junto con dos números.
   //Devolver el callback pasándole como argumentos los números recibidos.
   //Tu código:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// 26/01: return cb(n1,n2); +++ PERFECTO+++
   return cb(n1,n2);
 
 }
@@ -101,14 +39,11 @@ function sumarArray(numeros, cb) {
   // No es necesario devolver nada
   //Tu código:
  
- 
- 
- 
- 
- 
- 
- 
- 
+  // 26/01 : var sumaReduce= numeros.reduce(cb(acc, curr)) {
+    //return acc + curr},0);
+ // } mm no termine de hacerlo bien
+ // puse: var sumaReduce= numeros.reduce(cb(arrayNuevo, numeros)) {return arrayNuevo 
+ //+ array},0} cb(sumaReduce) ((((CURR SIGNIFICA CURRENT, QUE ES EL ACTUAL))))
  
  
   var suma= 0
@@ -132,28 +67,20 @@ function forEach(array, cb) {
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
 
-  //var suma= 0
+
   //for (var i=0; i< array.length;i++)
-//cb(array[i]);
+//cb(array[i]);  PERFECTO"""
+
+// 26/01: forEach.forEach(function(array,cb)){console.log(array)};
+//MAL.. no termino de entender.  porq elemento e indice.. 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- array.forEach(function (elemento,indice){
+ array.forEach(function (elemento){
 cb(elemento);
+
+//una forma de simplificarlo seria 
+// array.forEach(cb);se da cuando se ejecuta el mismo elemento que esta en el (array,CB)
 })  
 } // FORMO UTILIZANDO EL .FOREACH, ES IGUALMENTE VALIDA QUE LA FOR.
 
